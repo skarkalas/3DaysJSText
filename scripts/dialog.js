@@ -80,7 +80,7 @@ function submitData()
 function validate()
 {
 	var args=window.dialogArguments;
-	var returnValue=new Array();
+	var returnValue={};
 	
 	for(var i=0;i<args.length;i++)
 	{
@@ -134,7 +134,7 @@ function validate()
 			object.value=new Date(element.value);			
 		}
 		
-		returnValue.push(object);
+		returnValue[object.name] = object.value;
 	}
 
 	return returnValue;

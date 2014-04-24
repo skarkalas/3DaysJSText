@@ -410,8 +410,8 @@ Text.getNextFormatSpecifier=function(text)
 	var dob={name:'birthdate',type:'date',prompt:'select your date of birth'};
 	var sex={name:'sex',type:'boolean',prompt:'are you male?'};
 	var input=text.read(name,age,dob,sex);
-	text.printf('Your name is %s and you are %d years old\n',input[0].value,input[1].value);
-	text.printf('You are %s and you were born in %d\n',input[3].value?'male':'female',input[2].value.getFullYear());
+	text.printf('Your name is %s and you are %d years old\n',input.name,input.age);
+	text.printf('You are %s and you were born in %d\n',input.sex?'male':'female',input.birthdate.getFullYear());
 	
 	display unformatted output
 	--------------------------
