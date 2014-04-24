@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>3 Days JS Text</title>
+	<link rel="stylesheet" type="text/css" href="./styles/text.css" media="screen">
+</head>
+<body>
+	<h1>3 Days JS Text</h1>
+	<textarea id="input" rows="10" cols="50"></textarea> 
+	<hr/>
+	<input id="execute" type="button" onclick="execute()" value="execute"/>
+	<hr/>
+	<textarea id="textoutput" rows="10" cols="50" disabled></textarea> 
+	
+	<script type="text/javascript" charset="utf-8" src="https://dl.dropboxusercontent.com/u/15318052/LKLProjects/3DaysJSDebugger/scripts/debugger.js"></script> 
+	<script type="text/javascript" charset="utf-8" src="./scripts/text.js"></script> 	
+	<script type="text/javascript" charset="utf-8" src="./scripts/editor.js"></script> 
+	
+	<script language="javascript" type="text/javascript">	
+	function execute()
+	{
+		var code = document.getElementById('input').value;
+		eval(code);
+	}
+	</script>
+	
+</body>
+</html>
